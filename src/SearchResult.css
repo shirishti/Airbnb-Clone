@@ -1,0 +1,82 @@
+.searchResult {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  position: relative;
+  border-bottom: 1px solid lightgray;
+  padding: 20px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.searchResult:hover {
+  opacity: 0.8;
+}
+
+.searchResult__heart {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.searchResult > img {
+  object-fit: fill;
+  border-radius: 10px;
+  box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
+  max-width: 350px;
+  max-height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.searchResult__content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  justify-content: space-between;
+}
+
+.searchResult__top {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 40vw;
+}
+
+.searchResult__top > h3 {
+  font-weight: 500;
+  text-transform: inherit;
+  margin: 5px;
+}
+
+.searchResult__top > p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: gray;
+}
+.searchResult__bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchResult__stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.searchResult__star {
+  color: crimson;
+}
+
+.searchResult__price {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+.searchResult__price > p {
+  text-align: right;
+}
